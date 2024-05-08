@@ -8,7 +8,8 @@
         "product-specification-group#table",
         "shelf.relatedProducts",
         "product-reviews",
-        "product-questions-and-answers"
+        "product-questions-and-answers",
+        "condition-layout.product#stock-sku"
       ]
     },
     "flex-layout.row#specifications-title": {
@@ -131,5 +132,35 @@
       "children": ["add-to-cart-button"]
     }
     
-    //--> novos componentes aqui
+    "condition-layout.product#stock-sku": {
+      "props": {
+        "conditions": [
+          {
+            "subject": "isProductAvailable",
+          }
+        ]
+        "Then": "flex-layout.col#right-col",
+        "Else": "flex-layout.col#right-col-outstock"
+      }
+    },
+
+    "flex-layout.col#right-col-outstock": {
+      "props": {
+        "preventVerticalStretch": true,
+        "rowGap": 0,
+        "blockClass": "product-outstock"
+
+      },
+      "children": [
+        "flex-layout.row#product-name",
+        "product-rating-summary",
+        "product-identifier.product",
+        "flex-layout.row#list-price-savings",
+        "flex-layout.row#selling-price",
+        "product-installments",
+        "sku-selector",
+        "availability-notify"
+      ]
+    }
+        
 }
