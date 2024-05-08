@@ -20,7 +20,7 @@
           "simulationBehavior": "skip"
         }
       }
-    }
+    },
   
     "store.search.product-comparison#department": {
       "blocks": ["search-result-layout"],
