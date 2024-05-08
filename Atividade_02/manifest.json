@@ -18,7 +18,8 @@
       "vtex.visibility-layout": "0.x"
     },
     "peerDependencies": {
-      "vtex.reviews-and-ratings": "3.x"
+      "vtex.reviews-and-ratings": "3.x",
+      "vtexventures.livestreaming": "0.x"
     },
     "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
   }
