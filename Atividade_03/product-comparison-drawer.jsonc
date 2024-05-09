@@ -1,11 +1,11 @@
 {
     "product-comparison-drawer": {
-      "title": "ComparaÃ§Ã£o de Produtos",
+      "title": "Comparação de Produtos",
       "blocks": ["list-context.comparison-product-summary-slider#drawer"]
     },
     "list-context.comparison-product-summary-slider#drawer": {
-      "blocks": ["slider-layout#comparison-drawer"],
-      "children": ["product-summary.shelf.product-comparison#drawer"]
+      "blocks": ["product-summary.shelf.product-comparison#drawer"],
+      "children": ["slider-layout#comparison-drawer"]
     },
     "slider-layout#comparison-drawer": {
       "props": {
