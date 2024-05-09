@@ -34,8 +34,51 @@
           "horizontalAlign": "left",
           "preserveLayoutOnMobile": false
         },
-        "children": ["seu componente aqui"]
+        "children": ["slider-layout#benchmark"]
+      },
+
+      "list-context.info-card-list#lista-produtos": {
+        "children": ["slider-layout#benchmark"],
+        "props": {
+          "infoCards": [
+            {
+              "isFullModeStyle": false,
+              "textPosition": "left",
+              "imageUrl": "/arquivos/image01.png",
+              "callToActionText": "Nome categoria",
+              "textAlignment": "left"
+            },
+            {
+              "isFullModeStyle": false,
+              "textPosition": "left",
+              "imageUrl": "/arquivos/image02.png",
+              "callToActionText": "Nome categoria",
+              "textAlignment": "left"
+            },
+            {
+              "isFullModeStyle": false,
+              "textPosition": "left",
+              "imageUrl": "/arquivos/image03.png",
+              "callToActionText": "Nome categoria",
+              "textAlignment": "left"
+            }
+          ]
+        }
+      },
+      
+      "slider-layout#benchmark": {
+        "title": "Título do Slider",
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 1
+          },
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots": "always",
+          "infinite": true,
+          "fullWidth": true
+        }
       }
 
-      //componentes novos
 }
